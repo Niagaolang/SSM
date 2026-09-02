@@ -6,20 +6,56 @@ function debugLog(...args) {
     }
 }
 
-fetch("/Header&Footer/header.html")
-    .then(response => response.text())
+
+// =========================
+// Load Header
+// =========================
+fetch("Header&Footer/header.html")
+    .then(response => {
+        if (!response.ok) {
+            throw new Error("ไม่พบไฟล์ header.html");
+        }
+
+        return response.text();
+    })
     .then(data => {
-        document.querySelector("#header").innerHTML = data;
+        const header = document.querySelector("#header");
+
+        if (header) {
+            header.innerHTML = data;
+        }
+    })
+    .catch(error => {
+        console.error("Header Error:", error);
     });
 
 
-fetch("/Header&Footer/footer.html")
-    .then(response => response.text())
+// =========================
+// Load Footer
+// =========================
+fetch("Header&Footer/footer.html")
+    .then(response => {
+        if (!response.ok) {
+            throw new Error("ไม่พบไฟล์ footer.html");
+        }
+
+        return response.text();
+    })
     .then(data => {
-        document.querySelector("#footer").innerHTML = data;
+        const footer = document.querySelector("#footer");
+
+        if (footer) {
+            footer.innerHTML = data;
+        }
+    })
+    .catch(error => {
+        console.error("Footer Error:", error);
     });
 
+
+// =========================
 // Toggle Mobile Menu
+// =========================
 function toggleMenu() {
     const navMenu = document.getElementById("navMenu");
 
