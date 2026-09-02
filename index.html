@@ -1,436 +1,369 @@
-<!DOCTYPE html>
-<html lang="th">
-
+<!DOCTYPE html> <html lang="th">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
-
     <meta name="description"
         content="SuperSmile Dental Clinic คลินิกทันตกรรม ให้บริการจัดฟัน อุดฟัน ถอนฟัน ฟอกสีฟัน และบริการทันตกรรมครบวงจร">
-
     <meta name="theme-color"
         content="#1688ad">
-
     <title>SuperSmile | คลินิกทันตกรรมซูเปอร์สไมล์</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Mali:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect"
-        href="https://fonts.googleapis.com">
-
-    <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Itim&family=Mali:ital,wght@0,400;0,600;1,400&display=swap"
-        rel="stylesheet">
-
-    <!-- Main CSS -->
-    <link rel="stylesheet"
-        href="style.css">
 </head>
 
-
 <body>
+<!-- Header -->
+<div id="header"></div>
 
-    <!-- =========================
-         Header
-    ========================== -->
-    <div id="header"></div>
+<!-- Hero Slider -->
+<section id="slider" class="hero-slider">
 
+    <!-- Desktop -->
+    <div class="carousel desktop-slider"
+         data-flickity='{
+            "cellAlign": "left",
+            "contain": true,
+            "wrapAround": true,
+            "imagesLoaded": true,
+            "autoPlay": 5000,
+            "prevNextButtons": false,
+            "pageDots": true
+         }'>
 
-    <!-- =========================
-         Hero Slider
-    ========================== -->
-    <section id="slider"
-        class="hero-slider">
+        <div class="carousel-cell">
 
-        <!-- Desktop -->
-        <div class="carousel desktop-slider"
-            data-flickity='{
-                "cellAlign": "left",
-                "contain": true,
-                "wrapAround": true,
-                "imagesLoaded": true,
-                "autoPlay": 5000,
-                "prevNextButtons": false,
-                "pageDots": true
-            }'>
+            <img
+                src="images/Header.png"
+                alt="SuperSmile Dental Clinic">
 
-            <div class="carousel-cell">
+            <div class="hero-content">
 
-                <img
-                    src="images/Header.png"
-                    alt="SuperSmile Dental Clinic">
+                <span class="hero-badge">
+                    SUPERSMILE DENTAL CLINIC
+                </span>
 
-                <div class="hero-content">
+                <h1>
+                    ดูแลรอยยิ้มของคุณ<br>
+                    ให้มั่นใจในทุกวัน
+                </h1>
 
-                    <span class="hero-badge">
-                        SUPERSMILE DENTAL CLINIC
-                    </span>
+                <p>
+                    คลินิกทันตกรรมที่พร้อมดูแลสุขภาพฟัน
+                    ด้วยทีมทันตแพทย์และบริการที่ใส่ใจ
+                </p>
 
-                    <h1>
-                        ดูแลรอยยิ้มของคุณ<br>
-                        ให้มั่นใจในทุกวัน
-                    </h1>
-
-                    <p>
-                        คลินิกทันตกรรมที่พร้อมดูแลสุขภาพฟัน
-                        ด้วยทีมทันตแพทย์และบริการที่ใส่ใจ
-                    </p>
-
-                    <a
-                        href="https://line.me/R/ti/p/@583uqqdn?oat__id=7100175"
-                        class="hero-button">
-
-                        นัดหมายเข้ารับบริการ
-
-                    </a>
-
-                </div>
+                <a href="https://line.me/R/ti/p/@583uqqdn?oat__id=7100175"
+                   class="hero-button">
+                    นัดหมายเข้ารับบริการ
+                </a>
 
             </div>
 
         </div>
 
+    </div>
 
-        <!-- Mobile -->
-        <div class="carousel mobile-slider"
-            data-flickity='{
-                "cellAlign": "left",
-                "contain": true,
-                "wrapAround": true,
-                "imagesLoaded": true,
-                "autoPlay": 5000,
-                "prevNextButtons": false,
-                "pageDots": true
-            }'>
 
-            <div class="carousel-cell">
+    <!-- Mobile -->
+    <div class="carousel mobile-slider"
+         data-flickity='{
+            "cellAlign": "left",
+            "contain": true,
+            "wrapAround": true,
+            "imagesLoaded": true,
+            "autoPlay": 5000,
+            "prevNextButtons": false,
+            "pageDots": true
+         }'>
 
-                <img
-                    src="images/Header.png"
-                    alt="SuperSmile Dental Clinic">
+        <div class="carousel-cell">
 
-                <div class="hero-content">
+            <img
+                src="images/Header.png"
+                alt="SuperSmile Dental Clinic">
 
-                    <span class="hero-badge">
-                        SUPERSMILE
-                    </span>
+            <div class="hero-content">
 
-                    <h1>
-                        ดูแลรอยยิ้มของคุณ
-                        ให้มั่นใจ
-                    </h1>
+                <span class="hero-badge">
+                    SUPERSMILE
+                </span>
 
-                    <p>
-                        บริการทันตกรรมครบวงจร
-                        โดยทีมทันตแพทย์
-                    </p>
+                <h1>
+                    ดูแลรอยยิ้มของคุณ
+                    ให้มั่นใจ
+                </h1>
 
-                    <a
-                        href="#contact"
-                        class="hero-button">
+                <p>
+                    บริการทันตกรรมครบวงจร
+                    โดยทีมทันตแพทย์
+                </p>
 
-                        นัดหมายเข้ารับบริการ
+                <a href="#contact"
+                   class="hero-button">
+                    นัดหมายเข้ารับบริการ
+                </a>
 
-                    </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<main>
+
+    <!-- เกี่ยวกับเรา -->
+    <section id="about"
+             class="about-section">
+
+        <div class="section-heading">
+
+            <span>✦ 𝓢𝓾𝓹𝓮𝓻 𝓢𝓶𝓲𝓵𝓮 ✦</span>
+            <h2>
+                เพราะรอยยิ้มที่ดี <br>
+                เริ่มต้นจากสุขภาพฟันที่ดี
+            </h2>
+
+            <p>
+                SuperSmile Dental Clinic
+                พร้อมดูแลสุขภาพช่องปากของคุณ<br>
+                ด้วยมาตรฐานการรักษาและความใส่ใจ
+                ในทุกขั้นตอน
+            </p>
+
+        </div>
+
+    </section>
+    <!-- ทันตแทพย์ -->
+    <section id="dentists" class="dentists-section">
+
+        <div class="section-heading">
+
+            <span>✦ 𝓞𝓤𝓡 𝓓𝓔𝓝𝓣𝓘𝓢𝓣𝓢 ✦</span>
+
+            <h2>
+            ทันตแพทย์ของเรา
+            </h2>
+
+            <p>
+            ดูแลทุกขั้นตอนด้วยความใส่ใจ
+            เพื่อสุขภาพฟันและรอยยิ้มที่มั่นใจของคุณ
+            </p>
+
+        </div>
+
+
+    <!-- Dentist Cards -->
+        <div class="dentists-grid">
+
+
+        <!-- หมอแทน -->
+            <article class="dentist-card">
+
+                <div class="dentist-image">
+
+                    <img
+                    src="images/Vegeta.jpg"
+                    alt="หมอแทน SuperSmile Dental Clinic"
+                    >
 
                 </div>
 
-            </div>
+                <div class="dentist-info">
+
+                    <span class="dentist-label">
+                    DENTIST
+                    </span>
+
+                    <h3>
+                        หมอแทน
+                    </h3>
+
+                    <p class="dentist-position">
+                        ทันตแพทย์
+                    </p>
+
+                    <div class="dentist-line"></div>
+
+                    <p class="dentist-description">
+                        พร้อมดูแลสุขภาพช่องปาก
+                        และรอยยิ้มของคนไข้
+                        ด้วยความใส่ใจในทุกขั้นตอน
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        <!-- หมออาร์ท -->
+            <article class="dentist-card">
+
+                <div class="dentist-image">
+
+                    <img
+                        src="images/Goku.jpeg"
+                        alt="หมออาร์ท SuperSmile Dental Clinic"
+                    >
+
+                </div>
+
+                <div class="dentist-info">
+
+                    <span class="dentist-label">
+                        DENTIST
+                    </span>
+
+                    <h3>
+                        หมออาร์ท
+                    </h3>
+
+                    <p class="dentist-position">
+                        ทันตแพทย์
+                    </p>
+
+                    <div class="dentist-line"></div>
+
+                    <p class="dentist-description">
+                        ดูแลคนไข้ด้วยความใส่ใจ
+                        พร้อมให้คำแนะนำการดูแล
+                        สุขภาพช่องปากอย่างเหมาะสม
+                    </p>
+
+                </div>
+
+            </article>
+
 
         </div>
 
     </section>
 
+    <!-- Services -->
+    <section id="services"
+             class="services-section">
 
-    <!-- =========================
-         Main Content
-    ========================== -->
-    <main>
+        <div class="section-heading">
 
+            <span>✧ 𝓢𝓮𝓻𝓿𝓲𝓬𝓮𝓼 ✧</span>
+            <h2>
+                บริการทันตกรรมของเรา
+            </h2>
 
-        <!-- =========================
-             About
-        ========================== -->
-        <section
-            id="about"
-            class="about-section">
+            <p>
+                ดูแลสุขภาพฟันและรอยยิ้มของคุณ
+                อย่างครบวงจร
+            </p>
 
-            <div class="section-heading">
-
-                <span>
-                    ✦ 𝓢𝓾𝓹𝓮𝓻 𝓢𝓶𝓲𝓵𝓮 ✦
-                </span>
-
-                <h2>
-                    เพราะรอยยิ้มที่ดี <br>
-                    เริ่มต้นจากสุขภาพฟันที่ดี
-                </h2>
-
-                <p>
-                    SuperSmile Dental Clinic
-                    พร้อมดูแลสุขภาพช่องปากของคุณ<br>
-                    ด้วยมาตรฐานการรักษาและความใส่ใจ
-                    ในทุกขั้นตอน
-                </p>
-
-            </div>
-
-        </section>
+        </div>
 
 
-        <!-- =========================
-             Dentists
-        ========================== -->
-        <section
-            id="dentists"
-            class="dentists-section">
+        <div class="services-grid">
 
-            <div class="section-heading">
+            <article class="service-card">
 
-                <span>
-                    ✦ 𝓞𝓤𝓡 𝓓𝓔𝓝𝓣𝓘𝓢𝓣𝓢 ✦
-                </span>
+                <div class="service-icon">
+                    ✦
+                </div>
 
-                <h2>
-                    ทันตแพทย์ของเรา
-                </h2>
+                <h3>
+                    จัดฟัน
+                </h3>
 
                 <p>
-                    ดูแลทุกขั้นตอนด้วยความใส่ใจ
-                    เพื่อสุขภาพฟันและรอยยิ้มที่มั่นใจของคุณ
+                    ดูแลและวางแผนการจัดฟัน
+                    โดยทันตแพทย์ผู้เชี่ยวชาญ
                 </p>
 
-            </div>
+                <a href="/pages/services.html">
+                    ดูรายละเอียด →
+                </a>
+
+            </article>
 
 
-            <!-- Dentist Cards -->
-            <div class="dentists-grid">
+            <article class="service-card">
 
+                <div class="service-icon">
+                    ✧
+                </div>
 
-                <!-- หมอแทน -->
-                <article class="dentist-card">
-
-                    <div class="dentist-image">
-
-                        <img
-                            src="images/Vegeta.jpg"
-                            alt="หมอแทน SuperSmile Dental Clinic">
-
-                    </div>
-
-                    <div class="dentist-info">
-
-                        <span class="dentist-label">
-                            DENTIST
-                        </span>
-
-                        <h3>
-                            หมอแทน
-                        </h3>
-
-                        <p class="dentist-position">
-                            ทันตแพทย์
-                        </p>
-
-                        <div class="dentist-line"></div>
-
-                        <p class="dentist-description">
-                            พร้อมดูแลสุขภาพช่องปาก
-                            และรอยยิ้มของคนไข้
-                            ด้วยความใส่ใจในทุกขั้นตอน
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <!-- หมออาร์ท -->
-                <article class="dentist-card">
-
-                    <div class="dentist-image">
-
-                        <img
-                            src="images/Goku.jpeg"
-                            alt="หมออาร์ท SuperSmile Dental Clinic">
-
-                    </div>
-
-                    <div class="dentist-info">
-
-                        <span class="dentist-label">
-                            DENTIST
-                        </span>
-
-                        <h3>
-                            หมออาร์ท
-                        </h3>
-
-                        <p class="dentist-position">
-                            ทันตแพทย์
-                        </p>
-
-                        <div class="dentist-line"></div>
-
-                        <p class="dentist-description">
-                            ดูแลคนไข้ด้วยความใส่ใจ
-                            พร้อมให้คำแนะนำการดูแล
-                            สุขภาพช่องปากอย่างเหมาะสม
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             Services
-        ========================== -->
-        <section
-            id="services"
-            class="services-section">
-
-            <div class="section-heading">
-
-                <span>
-                    ✧ 𝓢𝓮𝓻𝓿𝓲𝓬𝓮𝓼 ✧
-                </span>
-
-                <h2>
-                    บริการทันตกรรมของเรา
-                </h2>
+                <h3>
+                    ฟอกสีฟัน
+                </h3>
 
                 <p>
-                    ดูแลสุขภาพฟันและรอยยิ้มของคุณ
-                    อย่างครบวงจร
+                    ช่วยให้รอยยิ้มดูสดใส
+                    และเพิ่มความมั่นใจในทุกวัน
                 </p>
 
-            </div>
+                <a href="/pages/services.html">
+                    ดูรายละเอียด →
+                </a>
+
+            </article>
 
 
-            <div class="services-grid">
+            <article class="service-card">
+
+                <div class="service-icon">
+                    +
+                </div>
+
+                <h3>
+                    อุดฟัน
+                </h3>
+
+                <p>
+                    ดูแลฟันผุและบูรณะฟัน
+                    เพื่อสุขภาพช่องปากที่ดี
+                </p>
+
+                <a href="/pages/services.html">
+                    ดูรายละเอียด →
+                </a>
+
+            </article>
 
 
-                <!-- จัดฟัน -->
-                <article class="service-card">
+            <article class="service-card">
 
-                    <div class="service-icon">
-                        ✦
-                    </div>
+                <div class="service-icon">
+                    ♢
+                </div>
 
-                    <h3>
-                        จัดฟัน
-                    </h3>
+                <h3>
+                    ถอนฟัน
+                </h3>
 
-                    <p>
-                        ดูแลและวางแผนการจัดฟัน
-                        โดยทันตแพทย์ผู้เชี่ยวชาญ
-                    </p>
+                <p>
+                    ให้บริการถอนฟันอย่างเหมาะสม
+                    พร้อมดูแลหลังการรักษา
+                </p>
 
-                    <a href="pages/services.html">
-                        ดูรายละเอียด →
-                    </a>
+                <a href="/pages/services.html">
+                    ดูรายละเอียด →
+                </a>
 
-                </article>
+            </article>
 
+        </div>
 
-                <!-- ฟอกสีฟัน -->
-                <article class="service-card">
+    </section>
 
-                    <div class="service-icon">
-                        ✧
-                    </div>
-
-                    <h3>
-                        ฟอกสีฟัน
-                    </h3>
-
-                    <p>
-                        ช่วยให้รอยยิ้มดูสดใส
-                        และเพิ่มความมั่นใจในทุกวัน
-                    </p>
-
-                    <a href="pages/services.html">
-                        ดูรายละเอียด →
-                    </a>
-
-                </article>
+</main>
 
 
-                <!-- อุดฟัน -->
-                <article class="service-card">
-
-                    <div class="service-icon">
-                        +
-                    </div>
-
-                    <h3>
-                        อุดฟัน
-                    </h3>
-
-                    <p>
-                        ดูแลฟันผุและบูรณะฟัน
-                        เพื่อสุขภาพช่องปากที่ดี
-                    </p>
-
-                    <a href="pages/services.html">
-                        ดูรายละเอียด →
-                    </a>
-
-                </article>
+<!-- Footer -->
+<div id="footer"></div>
 
 
-                <!-- ถอนฟัน -->
-                <article class="service-card">
+<script src="js/script.js"></script>
 
-                    <div class="service-icon">
-                        ♢
-                    </div>
-
-                    <h3>
-                        ถอนฟัน
-                    </h3>
-
-                    <p>
-                        ให้บริการถอนฟันอย่างเหมาะสม
-                        พร้อมดูแลหลังการรักษา
-                    </p>
-
-                    <a href="pages/services.html">
-                        ดูรายละเอียด →
-                    </a>
-
-                </article>
-
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- =========================
-         Footer
-    ========================== -->
-    <div id="footer"></div>
-
-
-    <!-- =========================
-         JavaScript
-    ========================== -->
-    <script src="js/script.js"></script>
-
-</body>
-
-</html>
+</body> </html>
