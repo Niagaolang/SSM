@@ -6,14 +6,14 @@ function debugLog(...args) {
     }
 }
 
-fetch("/Header&Footer/header.html")
+fetch("../Header&Footer/header.html")
     .then(response => response.text())
     .then(data => {
         document.querySelector("#header").innerHTML = data;
     });
 
 
-fetch("/Header&Footer/footer.html")
+fetch("../Header&Footer/footer.html")
     .then(response => response.text())
     .then(data => {
         document.querySelector("#footer").innerHTML = data;
