@@ -6,11 +6,21 @@ function debugLog(...args) {
     }
 }
 
-// โหลด Header (ปรับตามชื่อโฟลเดอร์จริงที่คุณเปลี่ยน เช่น components)
+// โหลด Header และผูก Event ให้ปุ่มเมนูทำงานได้ทันทีหลังโหลดเสร็จ
 fetch("components/header.html")
     .then(response => response.text())
     .then(data => {
         document.querySelector("#header").innerHTML = data;
+        
+        // ผูกฟังก์ชันปุ่มเปิด-ปิดเมนูมือถือ
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navMenu = document.getElementById("navMenu");
+
+        if (menuToggle && navMenu) {
+            menuToggle.addEventListener("click", () => {
+                navMenu.classList.toggle("active");
+            });
+        }
     });
 
 // โหลด Footer
@@ -20,10 +30,9 @@ fetch("components/footer.html")
         document.querySelector("#footer").innerHTML = data;
     });
 
-// Toggle Mobile Menu
+// ฟังก์ชันสำรองกรณีเรียกผ่าน onclick ใน HTML
 function toggleMenu() {
     const navMenu = document.getElementById("navMenu");
-
     if (navMenu) {
         navMenu.classList.toggle("active");
     }
