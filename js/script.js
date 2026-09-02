@@ -8,16 +8,20 @@ function debugLog(...args) {
 
 
 // =========================
+// ตรวจว่าอยู่ในโฟลเดอร์ pages หรือไม่
+// =========================
+
+const isPages = window.location.pathname.includes("/pages/");
+
+const path = isPages ? "../" : "";
+
+
+// =========================
 // Load Header
 // =========================
-fetch("Header&Footer/header.html")
-    .then(response => {
-        if (!response.ok) {
-            throw new Error("ไม่พบไฟล์ header.html");
-        }
 
-        return response.text();
-    })
+fetch(`${path}Header&Footer/header.html`)
+    .then(response => response.text())
     .then(data => {
         const header = document.querySelector("#header");
 
@@ -33,14 +37,9 @@ fetch("Header&Footer/header.html")
 // =========================
 // Load Footer
 // =========================
-fetch("Header&Footer/footer.html")
-    .then(response => {
-        if (!response.ok) {
-            throw new Error("ไม่พบไฟล์ footer.html");
-        }
 
-        return response.text();
-    })
+fetch(`${path}Header&Footer/footer.html`)
+    .then(response => response.text())
     .then(data => {
         const footer = document.querySelector("#footer");
 
@@ -54,12 +53,15 @@ fetch("Header&Footer/footer.html")
 
 
 // =========================
-// Toggle Mobile Menu
+// Mobile Menu
 // =========================
+
 function toggleMenu() {
+
     const navMenu = document.getElementById("navMenu");
 
     if (navMenu) {
         navMenu.classList.toggle("active");
     }
+
 }
