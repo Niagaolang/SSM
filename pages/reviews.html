@@ -21,10 +21,93 @@
 
 <body>
 
-    <div id="header"></div>
+<div id="header"></div>
 
-    <div id="footer"></div>
+<main>
 
-    <script src="../js/script.js"></script>
+    <section id="reviews" class="reviews-section">
+
+        <div class="section-heading reveal">
+
+            <span>✦ REVIEWS ✦</span>
+
+            <h2>
+                รีวิวจากคนไข้ของเรา
+            </h2>
+
+            <p>
+                ความประทับใจจากผู้ที่มาใช้บริการ<br>
+                ที่ SuperSmile Dental Clinic
+            </p>
+
+        </div>
+
+
+        <!-- ยังไม่มีรีวิวแสดงตอนนี้ — ดีไซน์ empty state ไว้ให้ดูดีระหว่างรอ -->
+        <div class="reviews-empty reveal">
+
+            <div class="reviews-empty-icon">
+                ★
+            </div>
+
+            <h3>
+                เร็วๆ นี้จะมีรีวิวมาให้ชม
+            </h3>
+
+            <p>
+                ตอนนี้เรากำลังรวบรวมรีวิวจากคนไข้จริง
+                เร็วๆ นี้จะนำมาแสดงให้ชมที่นี่ครับ
+            </p>
+
+            <a href="#contact" class="hero-button">
+                ฝากรีวิวให้เราหน่อย
+            </a>
+
+        </div>
+
+
+        <!--
+            ============================================================
+            เตรียมไว้สำหรับตอนมีรีวิวจริง — วิธีใช้:
+              1) ลบ <div class="reviews-empty reveal">...</div> ด้านบนออก
+              2) เอาคอมเมนต์นี้ออก แล้วใส่ .review-card ตามจริง
+                 (ทำซ้ำ <article class="review-card"> ได้เรื่อยๆ ตามจำนวนรีวิว)
+              3) ระบุดาว, ข้อความรีวิว, ชื่อ, และบริการที่ใช้ในแต่ละใบ
+
+            <div class="reviews-grid">
+
+                <article class="review-card">
+
+                    <div class="review-stars">★★★★★</div>
+
+                    <p class="review-text">
+                        "ข้อความรีวิวจากคนไข้ใส่ตรงนี้"
+                    </p>
+
+                    <div class="review-author">
+
+                        <div class="review-avatar">ก</div>
+
+                        <div class="review-author-info">
+                            <strong>ชื่อคนไข้</strong>
+                            <span>บริการ: จัดฟัน</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+            ============================================================
+        -->
+
+    </section>
+
+</main>
+
+<div id="footer"></div>
+
+<script src="../js/script.js"></script>
 
 </body>
+</html>
