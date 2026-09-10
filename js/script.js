@@ -263,38 +263,7 @@ function initLineFloat() {
 // 7) Page transition — คลิกลิงก์ภายในเว็บแล้วจางออกก่อน
 //    ค่อยเปลี่ยนหน้า (ไม่ยุ่งกับลิงก์ภายนอก / เบอร์โทร / LINE)
 // ---------------------------------------------------------
-function initPageTransition() {
-    if (prefersReducedMotion) return;
 
-    document.addEventListener('click', (e) => {
-        const link = e.target.closest('a');
-        if (!link) return;
-
-        const href = link.getAttribute('href') || '';
-        if (!href || href.startsWith('#')) return; // anchor ในหน้าเดียวกัน ปล่อยผ่าน
-        if (link.target === '_blank') return; // เปิดแท็บใหม่ ปล่อยผ่าน
-        if (href.startsWith('mailto:') || href.startsWith('tel:')) return;
-
-        let url;
-        try {
-            url = new URL(href, window.location.href);
-        } catch (_) {
-            return;
-        }
-        if (url.origin !== window.location.origin) return; // ลิงก์ภายนอก ปล่อยผ่าน
-
-        e.preventDefault();
-        document.body.classList.add('page-out');
-        setTimeout(() => {
-            window.location.href = href;
-        }, 280);
-    });
-
-    // กรณีกดปุ่ม back/forward ของเบราว์เซอร์ (bfcache) ให้เอาคลาสออก
-    window.addEventListener('pageshow', () => {
-        document.body.classList.remove('page-out');
-    });
-}
 
 // ---------------------------------------------------------
 // 8) Parallax รูป Hero — เลื่อนช้ากว่าคอนเทนต์ตอน scroll
